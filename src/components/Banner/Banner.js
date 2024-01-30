@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { printer } from "../../assets/images";
+import { printer, bgmain } from "../../assets/images";
 
 function Banner() {
   return (
-    <div className="relative">
-      <div className="flex flex-col lg:flex-row h-screen">
-        {/* Left Div */}
+    <div
+      className="relative bg-cover"
+      style={{ backgroundImage: `url(${bgmain})` }}
+    >
+      <div className="flex flex-col lg:flex-row">
         <div className="flex-1 bg-lightBlue p-4">
           <h2 className="text-3xl lg:text-5xl font-bold mb-4">
             ALL IN ONE PRINTER
@@ -29,7 +31,7 @@ function Banner() {
             </span>
           </p>
           <Link
-            to="#"
+            to="/Setup"
             className="inline-block bg-black p-4 border border-white rounded-lg text-white hover:bg-gray-800 w-max"
           >
             CLICK HERE FOR PRINTER SETUP
@@ -42,11 +44,12 @@ function Banner() {
             <img
               src={printer}
               alt="Right Image"
-              className="w-full max-w-md lg:max-w-full h-auto max-w-300px"
+              className="lg:w-3/4 xl:w-4/5"
+              style={{ width: "500px" }}
             />
           </div>
           <br />
-          <p className="text-xl lg:text-4xl font-bold text-center lg:text-left">
+          <p className="text-2xl lg:text-4xl font-bold text-center lg:text-left">
             Call Us: +17050068050
           </p>
         </div>

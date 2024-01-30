@@ -34,7 +34,7 @@ const Footer = () => {
           <FooterListTitle title="Print Hub LLC" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              Welcome to PrintCraft LLC,
+              Welcome to Print Hub LLC,
               <br /> where you can discover all your printing needs. Explore our
               wide range of state-of-the-art printers designed to deliver
               outstanding performance, dependability, and quality.

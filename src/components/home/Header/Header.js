@@ -30,11 +30,12 @@ const Header = () => {
     <div className="w-full h-20 bg-white sticky top-0 z-50 border-b-[1px] border-b-gray-200">
       <nav className="h-full px-4 max-w-container mx-auto relative">
         <Flex className="flex items-center justify-between h-full">
-          <Link to="/">
-            <div>
-              <Image className="w-20 object-cover" imgSrc={logo} />
-            </div>
-          </Link>
+          <div>
+            <span class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">
+              Printer Authorized Help Desk Number +1-(888) 495 2973
+            </span>
+          </div>
+
           <div>
             {showMenu && (
               <motion.ul

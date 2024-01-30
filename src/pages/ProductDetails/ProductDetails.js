@@ -26,7 +26,7 @@ const ProductDetails = () => {
           </div>
           <div className="h-full xl:col-span-2">
             <img
-              className="w-full h-full object-cover"
+              className="w-full object-cover"
               src={productInfo.img}
               alt={productInfo.img}
             />
