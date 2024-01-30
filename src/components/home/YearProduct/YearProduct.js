@@ -17,8 +17,9 @@ const YearProduct = () => {
             Product of The year
           </h1>
           <p className="text-base font-normal text-primeColor max-w-[600px] mr-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            cupiditate modi amet! Facilis, aperiam quaerat.
+            Discover a shopping experience like never before! 🌟 Dive into our
+            vast selection of products and enjoy exclusive deals that will leave
+            you thrilled.
           </p>
           <ShopNow />
         </div>

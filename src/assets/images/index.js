@@ -9,9 +9,10 @@ import playstore from "../images/playstore.webp";
 import applestore from "../images/apple.png";
 import warning from "../images/warning.png";
 
-import saleImgOne from "./sale/saleImgOne.webp";
-import saleImgTwo from "./sale/saleImgTwo.webp";
-import saleImgThree from "./sale/saleImgThree.webp";
+import saleImgOne from "./sale/photo1.webp";
+import saleImgTwo from "./sale/photo1.1.webp";
+import saleImgThree from "./sale/photo1.0.webp";
+import saleImgFour from "./sale/photo2.webp";
 // ============== Products Start here ====================
 // New Arrivals
 import newArrOne from "./products/newArrival/new1.webp";
@@ -54,6 +55,7 @@ export {
   saleImgOne,
   saleImgTwo,
   saleImgThree,
+  saleImgFour,
   // ===================== Products start here ============
   // New Arrivals
   newArrOne,

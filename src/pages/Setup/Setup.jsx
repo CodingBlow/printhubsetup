@@ -27,22 +27,22 @@ function Setup() {
 
         <ul className="flex space-x-4 items-center">
           <li>
-            <Link to="/laserjet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               LaserJet
             </Link>
           </li>
           <li>
-            <Link to="/officejet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               OfficeJet
             </Link>
           </li>
           <li>
-            <Link to="/inkjet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               InkJet
             </Link>
           </li>
           <li>
-            <Link to="/deskjet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               DeskJet
             </Link>
           </li>
@@ -154,7 +154,10 @@ function Setup() {
         <br /> Add the printer on the new device. <br />
         <p className="py-10">
           Need additional help with set-up?{" "}
-          <a href="#" className="text-blue-500">
+          <a
+            href="https://tawk.to/chat/65aca3790ff6374032c2f282/1hkl5t5v9"
+            className="text-blue-500"
+          >
             Visit HP Support.
           </a>
         </p>

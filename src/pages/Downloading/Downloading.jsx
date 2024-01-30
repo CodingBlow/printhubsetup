@@ -34,22 +34,22 @@ function Downloading() {
         {/* Navigation Links */}
         <ul className="flex space-x-4 items-center">
           <li>
-            <Link to="/laserjet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               LaserJet
             </Link>
           </li>
           <li>
-            <Link to="/officejet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               OfficeJet
             </Link>
           </li>
           <li>
-            <Link to="/inkjet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               InkJet
             </Link>
           </li>
           <li>
-            <Link to="/deskjet" className="hover:text-gray-500">
+            <Link to="/Shop" className="hover:text-gray-500">
               DeskJet
             </Link>
           </li>
@@ -78,22 +78,22 @@ function Downloading() {
         <div className="lg:hidden p-4 bg-white">
           <ul className="flex flex-col space-y-2">
             <li>
-              <Link to="/laserjet" className="hover:text-gray-500">
+              <Link to="/Shop" className="hover:text-gray-500">
                 LaserJet
               </Link>
             </li>
             <li>
-              <Link to="/officejet" className="hover:text-gray-500">
+              <Link to="/Shop" className="hover:text-gray-500">
                 OfficeJet
               </Link>
             </li>
             <li>
-              <Link to="/inkjet" className="hover:text-gray-500">
+              <Link to="/Shop" className="hover:text-gray-500">
                 InkJet
               </Link>
             </li>
             <li>
-              <Link to="/deskjet" className="hover:text-gray-500">
+              <Link to="/Shop" className="hover:text-gray-500">
                 DeskJet
               </Link>
             </li>
@@ -203,7 +203,10 @@ function Downloading() {
 
       <p className="ml-8 mb-3 text-2xl">
         Need additional help with set-up? Visit{" "}
-        <Link to="#" className="text-blue-500 underline">
+        <Link
+          to="https://tawk.to/chat/65aca3790ff6374032c2f282/1hkl5t5v9"
+          className="text-blue-500 underline"
+        >
           HP Support
         </Link>
       </p>
