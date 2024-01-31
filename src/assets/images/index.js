@@ -4,6 +4,10 @@ import printer from "../images/banner/Printer1.webp";
 import bgmain from "../images/banner/white-paper.jpg";
 import hplogo from "../images/hplogo.png";
 import printersetup from "../images/defaultPrinterSetup.webp";
+import printersetup2 from "../images/envy.png";
+import printersetup3 from "../images/laser.png";
+import printersetup4 from "../images/desk.png";
+
 import otherPrinter from "../images/otherPrinters.webp";
 import playstore from "../images/playstore.webp";
 import applestore from "../images/apple.png";
@@ -48,6 +52,9 @@ export {
   hplogo,
   printersetup,
   otherPrinter,
+  printersetup2,
+  printersetup3,
+  printersetup4,
   playstore,
   applestore,
   warning,

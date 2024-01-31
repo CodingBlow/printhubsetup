@@ -9,97 +9,79 @@ import {
 } from "../../assets/images";
 
 function Downloading() {
+  // const [isOpen, setIsOpen] = useState(false);
+
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
+
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
+  const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div>
-      {/* Navbar for larger screens */}
-      <nav className="hidden lg:flex items-center justify-between p-4 bg-white text-black">
-        {/* Circular Company Logo */}
+      {/* Navbar  */}
+
+      <nav className="bg-white p-4 flex flex-col md:flex-row items-center md:pl-20">
+        {/* Company Logo */}
         <div className="flex items-center">
-          <div className="w-10 h-10 rounded-full bg-white mr-3">
-            <img
-              src={hplogo}
-              alt="Company Logo"
-              className="w-full h-full rounded-full"
-            />
-          </div>
-          <span className="text-lg font-bold">Hewlett-Packard</span>
+          <img src={hplogo} alt="Company Logo" className="h-14 mr-5 p-1" />
         </div>
+
+        {/* Hamburger Icon for Small Screens */}
+        <button
+          onClick={toggleMenu}
+          className="text-gray-600 focus:outline-none md:hidden"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
 
         {/* Navigation Links */}
-        <ul className="flex space-x-4 items-center">
-          <li>
-            <Link to="/Shop" className="hover:text-gray-500">
-              LaserJet
-            </Link>
-          </li>
-          <li>
-            <Link to="/Shop" className="hover:text-gray-500">
-              OfficeJet
-            </Link>
-          </li>
-          <li>
-            <Link to="/Shop" className="hover:text-gray-500">
-              InkJet
-            </Link>
-          </li>
-          <li>
-            <Link to="/Shop" className="hover:text-gray-500">
-              DeskJet
-            </Link>
-          </li>
-        </ul>
-      </nav>
-
-      {/* Hamburger menu for smaller screens */}
-      <div className="lg:hidden p-4 flex justify-between items-center bg-white">
-        <div className="flex items-center">
-          <div className="w-10 h-10 rounded-full bg-white mr-3">
-            <img
-              src={hplogo}
-              alt="Company Logo"
-              className="w-full h-full rounded-full"
-            />
-          </div>
-          <span className="text-lg font-bold">Hewlett-Packard</span>
-        </div>
-        <button onClick={toggle} className="text-2xl focus:outline-none">
-          ☰
-        </button>
-      </div>
-
-      {/* Responsive Navigation Links */}
-      {isOpen && (
-        <div className="lg:hidden p-4 bg-white">
-          <ul className="flex flex-col space-y-2">
-            <li>
-              <Link to="/Shop" className="hover:text-gray-500">
-                LaserJet
-              </Link>
-            </li>
-            <li>
-              <Link to="/Shop" className="hover:text-gray-500">
+        <div
+          className={`md:flex ${
+            isOpen ? "block" : "hidden"
+          } flex-col md:flex-row mt-4 md:mt-0`}
+        >
+          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
                 OfficeJet
               </Link>
             </li>
-            <li>
-              <Link to="/Shop" className="hover:text-gray-500">
-                InkJet
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
+                DeskJet
               </Link>
             </li>
-            <li>
-              <Link to="/Shop" className="hover:text-gray-500">
-                DeskJet
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
+                ENVY
+              </Link>
+            </li>
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
+                LaserJet
               </Link>
             </li>
           </ul>
         </div>
-      )}
+      </nav>
 
       {/* Main content */}
       <div
@@ -108,15 +90,15 @@ function Downloading() {
           backgroundImage: `url(${bgmain})`,
         }}
       >
-        <div className="bg-opacity-90 p-8 text-center lg:text-left flex-grow">
-          <h1 className="text-4xl font-bold mb-4 text-black">
+        <div className="bg-opacity-90 p-8 text-center lg:text-left flex-grow ml-10 w-full">
+          <h1 className=" text-4xl mb-4 text-black">
             Complete setup using HP Smart
           </h1>
-          <hr className="border-b-2 border-slate-900 mb-4 mx-auto lg:mx-0 w-16" />
-          <p className="mb-4 text-black text-lg">
+          <hr className="border-b-2 border-slate-900 mb-4 mx-auto lg:mx-0 w-3/4" />
+          <p className="mb-4 text-black text-2xl">
             1. Make sure that your printer is powered on
           </p>
-          <p className="mb-4 text-black text-lg">
+          <p className="mb-4 text-black text-2xl mb-8">
             2. Install HP Smart to complete setup
           </p>
           <Link
@@ -128,25 +110,26 @@ function Downloading() {
             Install Printer Driver
           </Link>
         </div>
-        <div className="lg:w-3/4 xl:w-4/5 p-4 lg:ml-auto">
+        <div className="lg:w-3/4 xl:w-4/5 p-4 lg:ml-auto lg:mr-auto">
           <img
             src={otherPrinter}
             alt="Printer Setup"
             className="lg:w-3/4 xl:w-4/5"
             style={{ width: "250px" }}
           />
+          <p className=" font-bold">Other Printers</p>
         </div>
       </div>
 
       {/* Troubleshooting */}
-      <div className="p-4 md:p-8 bg-white">
+      <div className="p-4 md:p-8 bg-white ml-10">
         <p className="text-lg font-semibold mb-2">Also Available on:</p>
-        <div className="flex space-x-4 mb-4">
+        <div className="flex space-x-4 mb-10">
           <img src={applestore} alt="Apple Store" className="h-12" />
           <img src={playstore} alt="Google Play Store" className="h-12" />
         </div>
 
-        <p className="text-3xl font-semibold mb-2">
+        <p className="text-3xl font-semibold mb-2 text-sky-500">
           Troubleshooting tips for launching the Microsoft Store
         </p>
 
@@ -201,14 +184,14 @@ function Downloading() {
         </details>
       </div>
 
-      <p className="ml-8 mb-3 text-2xl">
+      <p className=" mb-3 text-2xl ml-16">
         Need additional help with set-up? Visit{" "}
-        <Link
-          to="https://tawk.to/chat/65aca3790ff6374032c2f282/1hkl5t5v9"
+        <a
+          href="https://tawk.to/chat/65aca3790ff6374032c2f282/1hkl5t5v9"
           className="text-blue-500 underline"
         >
           HP Support
-        </Link>
+        </a>
       </p>
     </div>
   );

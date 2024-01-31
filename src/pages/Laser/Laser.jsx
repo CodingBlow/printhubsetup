@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { bgmain, hplogo, printersetup } from "../../assets/images";
+import { bgmain, hplogo, printersetup3 } from "../../assets/images";
 
-function Setup() {
+function Laser() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -89,7 +89,7 @@ function Setup() {
                 type="text"
                 id="productName"
                 className="border p-2 w-full md:w-11/12 md:mr-2 rounded-lg py-3"
-                placeholder="Enter your product name here. Example: “OfficeJet 9010”"
+                placeholder="Enter your product name here. Example: “LaserJet 5010”"
               />
               <Link
                 to="/setup/downloading"
@@ -101,7 +101,7 @@ function Setup() {
           </div>
           <div className="w-full md:w-1/5" style={{ marginTop: "auto" }}>
             <img
-              src={printersetup}
+              src={printersetup3}
               alt="HP Printer"
               className="w-full h-auto md:float-right"
             />
@@ -129,4 +129,4 @@ function Setup() {
   );
 }
 
-export default Setup;
+export default Laser;

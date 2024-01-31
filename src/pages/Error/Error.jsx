@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  bgmain,
-  hplogo,
-  otherPrinter,
-  applestore,
-  playstore,
-  warning,
-} from "../../assets/images";
+import { bgmain, hplogo, warning } from "../../assets/images";
 
 function Error() {
   const [loading, setLoading] = useState(true);
@@ -15,101 +8,75 @@ function Error() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 9000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  const [isOpenn, setIsOpenn] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpenn(!isOpenn);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
   return (
     <div>
-      {/* Navbar for larger screens */}
-      <nav className="hidden lg:flex items-center justify-between p-4 bg-white text-black">
-        {/* Circular Company Logo */}
+      <nav className="bg-white p-4 flex flex-col md:flex-row items-center md:pl-20">
+        {/* Company Logo */}
         <div className="flex items-center">
-          <div className="w-10 h-10 rounded-full bg-white mr-3">
-            <img
-              src={hplogo}
-              alt="Company Logo"
-              className="w-full h-full rounded-full"
-            />
-          </div>
-          <span className="text-lg font-bold">Hewlett-Packard</span>
+          <img src={hplogo} alt="Company Logo" className="h-14 mr-5 p-1" />
         </div>
+
+        {/* Hamburger Icon for Small Screens */}
+        <button
+          onClick={toggleMenu}
+          className="text-gray-600 focus:outline-none md:hidden"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
 
         {/* Navigation Links */}
-        <ul className="flex space-x-4 items-center">
-          <li>
-            <Link to="/laserjet" className="hover:text-gray-500">
-              LaserJet
-            </Link>
-          </li>
-          <li>
-            <Link to="/officejet" className="hover:text-gray-500">
-              OfficeJet
-            </Link>
-          </li>
-          <li>
-            <Link to="/inkjet" className="hover:text-gray-500">
-              InkJet
-            </Link>
-          </li>
-          <li>
-            <Link to="/deskjet" className="hover:text-gray-500">
-              DeskJet
-            </Link>
-          </li>
-        </ul>
-      </nav>
-
-      {/* Hamburger menu for smaller screens */}
-      <div className="lg:hidden p-4 flex justify-between items-center bg-white">
-        <div className="flex items-center">
-          <div className="w-10 h-10 rounded-full bg-white mr-3">
-            <img
-              src={hplogo}
-              alt="Company Logo"
-              className="w-full h-full rounded-full"
-            />
-          </div>
-          <span className="text-lg font-bold">Hewlett-Packard</span>
-        </div>
-        <button onClick={toggle} className="text-2xl focus:outline-none">
-          ☰
-        </button>
-      </div>
-
-      {/* Responsive Navigation Links */}
-      {isOpenn && (
-        <div className="lg:hidden p-4 bg-white">
-          <ul className="flex flex-col space-y-2">
-            <li>
-              <Link to="/laserjet" className="hover:text-gray-500">
-                LaserJet
-              </Link>
-            </li>
-            <li>
-              <Link to="/officejet" className="hover:text-gray-500">
+        <div
+          className={`md:flex ${
+            isOpen ? "block" : "hidden"
+          } flex-col md:flex-row mt-4 md:mt-0`}
+        >
+          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
                 OfficeJet
               </Link>
             </li>
-            <li>
-              <Link to="/inkjet" className="hover:text-gray-500">
-                InkJet
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
+                DeskJet
               </Link>
             </li>
-            <li>
-              <Link to="/deskjet" className="hover:text-gray-500">
-                DeskJet
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
+                ENVY
+              </Link>
+            </li>
+            <li className="text-gray-600 font-bold transition duration-300 hover:text-blue-500">
+              <Link to="/setup/downloading" onClick={toggleMenu}>
+                LaserJet
               </Link>
             </li>
           </ul>
         </div>
-      )}
+      </nav>
 
       {/* Loader */}
 
