@@ -22,13 +22,7 @@ import Offer from "./pages/Offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
-import Setup from "./pages/Setup/Setup";
-import Downloading from "./pages/Downloading/Downloading";
-import FormPage from "./pages/Form/FormPage";
-import Error from "./pages/Error/Error";
-import Deskjet from "./pages/DeskJet/Deskjet";
-import Laser from "./pages/Laser/Laser";
-import Envyp from "./pages/Envy/Envy";
+
 
 const Layout = () => {
   return (
@@ -61,13 +55,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
-      <Route path="/setup" element={<Setup />}></Route>
-      <Route path="/deskjet" element={<Deskjet />}></Route>
-      <Route path="/laserjet" element={<Laser />}></Route>
-      <Route path="/envy" element={<Envyp />}></Route>
-      <Route path="/setup/downloading" element={<Downloading />}></Route>
-      <Route path="/setup/downloading/form" element={<FormPage />}></Route>
-      <Route path="/setup/downloading/form/error" element={<Error />}></Route>
+
     </Route>
   )
 );

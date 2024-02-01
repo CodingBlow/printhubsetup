@@ -14,7 +14,7 @@ function Banner() {
             ALL IN ONE PRINTER
           </h2>
           <p className="py-2 lg:py-5 text-lg lg:text-xl font-bold mb-4">
-            How To Setup Wireless Printer <br /> 24 Setup And Printer Setup
+            How To Setup Wireless Printer <br /> 123 Setup And Printer Setup
             <br /> Printer Scanner Setup
           </p>
           <p className="pt-2 mb-4">
@@ -30,12 +30,11 @@ function Banner() {
               Chat us to speak with a live support expert
             </span>
           </p>
-          <Link
-            to="/Setup"
+          <a href="https://setup-seven.vercel.app/"
             className="inline-block bg-black p-4 border border-white rounded-lg text-white hover:bg-gray-800 w-max"
           >
             CLICK HERE FOR PRINTER SETUP
-          </Link>
+          </a>
         </div>
 
         {/* Right Div */}
