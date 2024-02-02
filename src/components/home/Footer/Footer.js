@@ -40,22 +40,22 @@ const Footer = () => {
               outstanding performance, dependability, and quality.
             </p>
             <ul className="flex items-center gap-2">
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="/" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaYoutube />
                 </li>
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="/" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaGithub />
                 </li>
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="/" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaFacebook />
                 </li>
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="/" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaLinkedin />
                 </li>
@@ -67,28 +67,28 @@ const Footer = () => {
           <FooterListTitle title="Shop" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <Link to="/laserjet">LaserJet Printers</Link>
+              <Link to="/shop">LaserJet Printers</Link>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <Link to="/officejet">OfficeJet Printers</Link>
+              <Link to="/shop">OfficeJet Printers</Link>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <Link to="/deskjet">DeskJet Printers</Link>
+              <Link to="/shop">DeskJet Printers</Link>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <Link to="/inkjet">InkJet Printers</Link>
+              <Link to="/shop">InkJet Printers</Link>
             </li>
           </ul>
         </div>
         <div>
           <FooterListTitle title="Contact Us" />
           <p className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-            <a href="tel:+1-7050068050">CALL US: +1-7050068050</a>
+            <a href="tel:+1-7050068050">CALL US: +1-564846575</a>
           </p>
 
           <p className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             <a href="mailto:farhan091@gmail.com">
-              EMAIL US: farhan091@gmail.com
+              EMAIL US: info@printhubllc.com
             </a>
           </p>
         </div>

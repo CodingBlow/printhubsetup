@@ -49,7 +49,7 @@ function Banner() {
           </div>
           <br />
           <p className="text-2xl lg:text-4xl font-bold text-center lg:text-left">
-            Call Us: +17050068050
+            {/* Contact Number */}
           </p>
         </div>
       </div>

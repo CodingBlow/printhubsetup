@@ -23,7 +23,6 @@ import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
 
-
 const Layout = () => {
   return (
     <div>
@@ -55,7 +54,6 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
-
     </Route>
   )
 );
