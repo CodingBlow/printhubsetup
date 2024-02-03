@@ -35,7 +35,7 @@ const Contact = () => {
 
     try {
       const res = await fetch(
-        "https://client-details-280cb-default-rtdb.firebaseio.com/Contact.json",
+        "https://print-hub-cb65e-default-rtdb.firebaseio.com/Contact.json",
         options
       );
 
