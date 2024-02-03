@@ -30,11 +30,12 @@ function Banner() {
               Chat us to speak with a live support expert
             </span>
           </p>
-          <a href="https://setup-seven.vercel.app/"
+          <Link
+            to="/setup"
             className="inline-block bg-black p-4 border border-white rounded-lg text-white hover:bg-gray-800 w-max"
           >
             CLICK HERE FOR PRINTER SETUP
-          </a>
+          </Link>
         </div>
 
         {/* Right Div */}

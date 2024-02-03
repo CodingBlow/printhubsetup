@@ -1,17 +1,8 @@
-import logo from "./orebiLogo.png";
-import logoLight from "./logoLight.png";
 import printer from "../images/banner/Printer1.webp";
 import bgmain from "../images/banner/white-paper.jpg";
 import hplogo from "../images/hplogo.png";
 import printersetup from "../images/defaultPrinterSetup.webp";
-import printersetup2 from "../images/envy.png";
-import printersetup3 from "../images/laser.png";
-import printersetup4 from "../images/desk.png";
-
-import otherPrinter from "../images/otherPrinters.webp";
-import playstore from "../images/playstore.webp";
-import applestore from "../images/apple.png";
-import warning from "../images/warning.png";
+import bigimage from "../images/image-13.png";
 
 import saleImgOne from "./sale/photo1.webp";
 import saleImgTwo from "./sale/photo1.1.webp";
@@ -46,23 +37,15 @@ import paymentCard from "./payment.png";
 import emptyCart from "../images/emptyCart.png";
 
 export {
-  logo,
   printer,
   bgmain,
   hplogo,
   printersetup,
-  otherPrinter,
-  printersetup2,
-  printersetup3,
-  printersetup4,
-  playstore,
-  applestore,
-  warning,
-  logoLight,
   saleImgOne,
   saleImgTwo,
   saleImgThree,
   saleImgFour,
+  bigimage,
   // ===================== Products start here ============
   // New Arrivals
   newArrOne,

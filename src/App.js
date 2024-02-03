@@ -22,6 +22,11 @@ import Offer from "./pages/Offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
+import Setup from "./pages/Setup/Setup";
+import Downloading from "./pages/Downloading/Downloading";
+
+import Loading from "./pages/Loading/Loading";
+import Error from "./pages/Error/Error";
 
 const Layout = () => {
   return (
@@ -54,6 +59,15 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
+      <Route path="/setup" element={<Setup />}></Route>
+      <Route path="/setup/downloading" element={<Downloading />}></Route>
+
+      <Route path="/setup/loading" element={<Loading />}></Route>
+      <Route path="/setup/error" element={<Error />}></Route>
+      <Route path="/setup/officejet" element={<Downloading />}></Route>
+      <Route path="/setup/deskjet" element={<Downloading />}></Route>
+      <Route path="/setup/laserjet" element={<Downloading />}></Route>
+      <Route path="/setup/envy" element={<Downloading />}></Route>
     </Route>
   )
 );
