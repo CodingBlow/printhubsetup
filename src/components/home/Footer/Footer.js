@@ -88,7 +88,7 @@ const Footer = () => {
 
           <p className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             <a href="mailto:farhan091@gmail.com">
-              EMAIL US: info@printhubllc.com
+              EMAIL US: printhub.llc2024@gmail.com
             </a>
           </p>
         </div>

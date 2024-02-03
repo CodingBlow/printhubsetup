@@ -163,7 +163,7 @@ const Setup = () => {
             </div>
             <div class="main-copy-2" id="copy2">
               Need additional help with set-up? Visit{" "}
-              <a href="https://tawk.to/chat/65aca3790ff6374032c2f282/1hkl5t5v9">
+              <a href="https://tawk.to/chat/65be18d78d261e1b5f5bf30e/1hln923ec">
                 HP Support
               </a>
             </div>
