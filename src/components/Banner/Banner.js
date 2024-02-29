@@ -14,27 +14,28 @@ function Banner() {
             ALL IN ONE PRINTER
           </h2>
           <p className="py-2 lg:py-5 text-lg lg:text-xl font-bold mb-4">
-            How To Setup Wireless Printer <br /> 123 Setup And Printer Setup
+            How To Setup Remote Printer <br /> 123 Setup And Printer Setup
             <br /> Printer Scanner Setup
           </p>
           <p className="pt-2 mb-4">
             <span className="text-3xl lg:text-4xl font-bold">
-              Having Trouble With Printer?
+             Having Inconvenience With Printer?
             </span>
             <br />
             <span className="text-lg lg:text-xl font-bold">
-              24X7 Expert Technical support
+              24X7 Master Specialized support
             </span>
             <br />
             <span className="text-lg lg:text-xl font-bold">
-              Chat us to speak with a live support expert
+              Chat us to talk with a live bolster expert
+
             </span>
           </p>
           <Link
             to="/setup"
             className="inline-block bg-black p-4 border border-white rounded-lg text-white hover:bg-gray-800 w-max"
           >
-            CLICK HERE FOR PRINTER SETUP
+            Tap HERE FOR PRINTER SETUP
           </Link>
         </div>
 
