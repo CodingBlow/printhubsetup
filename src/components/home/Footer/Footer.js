@@ -82,9 +82,7 @@ const Footer = () => {
         </div>
         <div>
           <FooterListTitle title="Contact Us" />
-          <p className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-            // <a href="tel:+1-7050068050">CALL US: +1-564846575</a>
-          </p>
+        
 
           <p className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             <a href="mailto:farhan091@gmail.com">
