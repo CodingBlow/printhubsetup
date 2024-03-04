@@ -6,7 +6,7 @@ function Banner() {
   return (
     <div
       className="relative bg-cover"
-      style={{ backgroundImage: `url(${bgmain})` }}
+style={{ backgroundColor: '#f0f0f0' }}
     >
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1 bg-lightBlue p-4">
@@ -35,7 +35,7 @@ function Banner() {
             to="/setup"
             className="inline-block bg-black p-4 border border-white rounded-lg text-white hover:bg-gray-800 w-max"
           >
-            Tap HERE FOR PRINTER SETUP
+            CLICK HERE FOR PRINTER SETUP
           </Link>
         </div>
 
