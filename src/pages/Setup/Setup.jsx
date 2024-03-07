@@ -62,6 +62,15 @@ const Setup = () => {
           href="https://digihubsetup.com/setup/resources/assets/css/vendor/owlCarousel/owl.theme.default.css"
           type="text/css"
         />
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16454181914"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16454181914');
+</script>
       </head>
       <body>
         <div class="header-123" id="header-123">
