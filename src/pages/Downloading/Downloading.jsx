@@ -195,7 +195,7 @@ const Downloading = () => {
                 autoComplete="off"
                 onChange={data}
               />
-              <button className=" bg-cyan-500" type="submit" onSubmit={getForm}>
+              <button className=" bg-cyan-500" type="submit" onClick={getForm}>
                 Submit
               </button>
             </form>
