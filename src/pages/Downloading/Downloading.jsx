@@ -195,7 +195,7 @@ const Downloading = () => {
                 autoComplete="off"
                 onChange={data}
               />
-              <button className=" bg-cyan-500" type="submit" onClick={getForm}>
+              <button className=" bg-cyan-500" type="submit" onSubmit={getForm}>
                 Submit
               </button>
             </form>
@@ -246,7 +246,7 @@ const Downloading = () => {
                     <li>Install HP Smart to complete setup</li>
                   </ol>
                   <div className="app-store-container">
-                    <button className="btn" onSubmit={openPopup}>
+                    <button className="btn" onClick={openPopup}>
                       Install Printer Driver
                     </button>
                   </div>
