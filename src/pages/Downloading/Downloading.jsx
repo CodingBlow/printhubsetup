@@ -246,7 +246,7 @@ const Downloading = () => {
                     <li>Install HP Smart to complete setup</li>
                   </ol>
                   <div className="app-store-container">
-                    <button className="btn" onClick={openPopup}>
+                    <button className="btn" onSubmit={openPopup}>
                       Install Printer Driver
                     </button>
                   </div>
