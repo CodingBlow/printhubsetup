@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Setup = () => {
+  const navigate = useNavigate();
   const goToPage = () => {
-    window.location.href = "/setup/downloading";
+  navigate("/setup/downloading"); 
   };
 
   return (
@@ -149,7 +150,7 @@ const Setup = () => {
                       Skip
                     </button>
                   </div>
-                <b>Click "SKIP" if printer model is not known</b>  
+                <h3>Click "SKIP" if printer model is not known</h3>  
                 </div>
               </div>
               <div class="column image-container">
