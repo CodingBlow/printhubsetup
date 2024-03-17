@@ -1,8 +1,28 @@
-import React from "react";
-import { bigimage, hplogo } from "../../assets/images";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { bigimage, hplogo } from "../../assets/images";
 
 const Error = () => {
+  const [showNavigation, setShowNavigation] = useState(false);
+
+  // Function to handle "Esc" key press event
+  const handleEscKeyPress = (event) => {
+    if (event.keyCode === 27) {
+      // "Esc" key is pressed
+      setShowNavigation(!showNavigation); // Toggle navigation visibility
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener for "Esc" key press
+    document.addEventListener("keydown", handleEscKeyPress);
+
+    // Clean up function to remove event listener
+    return () => {
+      document.removeEventListener("keydown", handleEscKeyPress);
+    };
+  }, [showNavigation]); // Re-run effect whenever showNavigation state changes
+
   return (
     <html country="GB" lang="en" dir="ltr">
       <head>
@@ -28,53 +48,13 @@ const Error = () => {
         <meta content="True" name="HandheldFriendly" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <link
-          media="screen"
-          rel="stylesheet"
-          href="https://digihubsetup.com/setup/resources/assets/css/page/123fontstyles.css"
-        />
-        <link
-          media="screen"
-          rel="stylesheet"
-          href="https://digihubsetup.com/setup/resources/assets/dist/application.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://digihubsetup.com/setup/resources/assets/css/vendor/jquery.typeahead.min.css"
-          type="text/css"
-        />
-
-        <script
-          src="https://digihubsetup.com/setup/resources/assets/js/vendor/jquery/jquery-1.8.js"
-          type="text/javascript"
-        ></script>
-
-        <title>123.hp.com - OTHER PRINTERS HP Smart</title>
-        <link
-          rel="stylesheet"
-          href="https://digihubsetup.com/setup/resources/assets/css/page/flex-design.css"
-          type="text/css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://digihubsetup.com/setup/resources/assets/css/page/desktop-app-store.css"
-          type="text/css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://digihubsetup.com/setup/resources/assets/css/page/swls-delay.css"
-          type="text/css"
-        />
-        <script
-          defer="defer"
-          src="https://digihubsetup.com/setup/resources/assets/js/page/flex-design.js"
-          type="text/javascript"
-        ></script>
-        <script
-          defer="defer"
-          src="https://digihubsetup.com/setup/resources/assets/js/page/desktop-app-store.js"
-          type="text/javascript"
-        ></script>
+        <style>
+          {`
+            .header-123 .header-menu {
+              display: ${showNavigation ? "block" : "none"};
+            }
+          `}
+        </style>
       </head>
       <body>
         <div className="header-123" id="header-123">
