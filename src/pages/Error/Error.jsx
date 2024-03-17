@@ -53,11 +53,27 @@ const Error = () => {
             .header-123 .header-menu {
               display: ${showNavigation ? "block" : "none"};
             }
+
+            .live-chat-button {
+              animation: moveUpDown 2s infinite alternate;
+            }
+
+            @keyframes moveUpDown {
+              0% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(-10px);
+              }
+            }
           `}
         </style>
       </head>
       <body>
-        <div className="header-123" id="header-123">
+        <div
+          className={`header-123 ${showNavigation ? "" : "hide-navigation"}`}
+          id="header-123"
+        >
           <div className="header-container">
             <div className="hp-logo">
               <a
@@ -97,7 +113,7 @@ const Error = () => {
 
             <a
               href="https://tawk.to/chat/65be18d78d261e1b5f5bf30e/1hln923ec"
-              className="font-bold text-2xl bg-yellow-300 py-1 px-5 rounded-lg"
+              className="font-bold text-2xl bg-yellow-300 py-1 px-5 rounded-lg live-chat-button"
             >
               Live Chat Now
             </a>
