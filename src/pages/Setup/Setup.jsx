@@ -144,7 +144,7 @@ const Setup = () => {
                   <div class="column two">
                     <button onClick={goToPage} type="submit" class="btn">
                       Next
-                    </button>{" "}
+                    </button>
                     <button onClick={goToPage} type="submit" class="btn">
                       Skip
                     </button>
