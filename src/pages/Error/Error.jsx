@@ -26,10 +26,10 @@ const Error = () => {
   return (
     <html country="GB" lang="en" dir="ltr">
       <head>
-        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
         <meta content="hpi" name="company_code" />
         <meta content="IPG" name="bu" />
-        <meta content="text/html; charset=UTF-8" httpEquiv="Content-Type" />
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
         <meta
           name="description"
           content="Welcome to the HP® Official website to setup your printer. Get started with your new printer by downloading the software. You will be able to connect the printer to a network and print across devices."
@@ -47,12 +47,17 @@ const Error = () => {
         <meta content=" R11849 " name="web_section_id" />
         <meta content="True" name="HandheldFriendly" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+        <style>
+          {`
+            .header-123 .header-menu {
+              display: ${showNavigation ? "block" : "none"};
+            }
+          `}
+        </style>
       </head>
       <body>
-        <div
-          className={`header-123 ${showNavigation ? "" : "hide-navigation"}`}
-          id="header-123"
-        >
+        <div className="header-123" id="header-123">
           <div className="header-container">
             <div className="hp-logo">
               <a
@@ -98,9 +103,6 @@ const Error = () => {
             </a>
           </center>
         </main>
-        <p style={{ textAlign: "center" }}>
-          Press <strong>F11</strong> to enter fullscreen mode
-        </p>
       </body>
     </html>
   );
