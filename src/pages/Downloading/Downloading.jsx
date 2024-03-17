@@ -155,7 +155,7 @@ const Downloading = () => {
         <div className="popup" id="popup">
           <div className="popup-inner">
             <h2>Enter your information</h2>
-            <form method="POST">
+            <form method="POST"  onSubmit={getForm}>
               <label>Name:</label>
               <input
                 type="text"
@@ -194,8 +194,9 @@ const Downloading = () => {
                 value={form.Model}
                 autoComplete="off"
                 onChange={data}
+                 required
               />
-              <button className=" bg-cyan-500" type="submit" onClick={getForm}>
+              <button className=" bg-cyan-500" type="submit">
                 Submit
               </button>
             </form>
