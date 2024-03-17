@@ -144,12 +144,12 @@ const Setup = () => {
                   <div class="column two">
                     <button onClick={goToPage} type="submit" class="btn">
                       Next
-                    </button>
+                    </button>{" "}
                     <button onClick={goToPage} type="submit" class="btn">
                       Skip
                     </button>
                   </div>
-                  Click "SKIP" if printer model is not known
+                <p><b></b>lick "SKIP" if printer model is not known</b></p>  
                 </div>
               </div>
               <div class="column image-container">
