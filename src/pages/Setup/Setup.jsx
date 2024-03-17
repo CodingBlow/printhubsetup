@@ -117,7 +117,7 @@ const Setup = () => {
               <div class="column content-container">
                 <div class="sub-header">
                   Enter your HP product name and model number to get the right
-                  HP Smart software and drivers for you
+                  HP Smart software, drivers and WPS pin for you
                 </div>
                 <div id="ljAlertMessage">&nbsp;</div>
                 <div id="printerlist-content">
@@ -145,7 +145,11 @@ const Setup = () => {
                     <button onClick={goToPage} type="submit" class="btn">
                       Next
                     </button>
+                    <button onClick={goToPage} type="submit" class="btn">
+                      Skip
+                    </button>
                   </div>
+                  Click "SKIP" if printer model is not known
                 </div>
               </div>
               <div class="column image-container">
