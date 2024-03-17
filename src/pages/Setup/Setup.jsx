@@ -149,7 +149,7 @@ const Setup = () => {
                       Skip
                     </button>
                   </div>
-                <p><b></b>lick "SKIP" if printer model is not known</b></p>  
+                <b>Click "SKIP" if printer model is not known</b>  
                 </div>
               </div>
               <div class="column image-container">
