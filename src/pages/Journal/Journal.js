@@ -14,7 +14,7 @@ const Journal = () => {
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
           <span className="text-primeColor font-semibold text-lg">
-            Print Hub LLC
+            Printer Setup
           </span>{" "}
           <div className="min-h-screen bg-gray-100 font-sans">
             <header className="bg-black text-white p-4">
