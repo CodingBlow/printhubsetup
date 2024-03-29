@@ -14,11 +14,11 @@ const About = () => {
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
           <span className="text-primeColor font-semibold text-lg">
-            Print Hub
+            Printer Setup
           </span>{" "}
           <div class="container mx-auto  p-6 bg-white rounded-lg shadow-lg">
             <p class="text-gray-700">
-              Welcome to <span class="font-semibold">Print Hub LLC</span>! We
+              Welcome to <span class="font-semibold">Printer Support</span>! We
               understand the frustration that comes with printer setup issues
               and fatal errors during the installation of printer drivers. We
               are dedicated to providing effective solutions and exceptional
@@ -82,12 +82,12 @@ const About = () => {
             <p class="mt-8 text-gray-700">
               Join us on this journey to revolutionize the way you approach
               printer setup and driver installations. At{" "}
-              <span class="font-semibold">Print Hub LLC</span>, we believe
+              <span class="font-semibold">Printer Setup</span>, we believe
               in making technology work for you.
             </p>
 
             <p class="mt-4 text-gray-700">
-              <span class="font-semibold">Print Hub LLC</span> - Making
+              <span class="font-semibold">Printer Setup</span> - Making
               Printing Simple and Reliable.
             </p>
           </div>
